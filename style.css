@@ -256,7 +256,22 @@ button:hover{
     background-color: transparent !important;
     outline: none !important;
 }
+.contactDetails input:active {
+    background-color: transparent !important;
+    outline: none !important;
+}
+.contactDetails input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(69, 69, 237) inset !important;
+    color: white;
+}
 
+
+input, select, textarea{
+    color: white;
+}
 .contact input, textarea {
     color: white;
     font-size: 15px;
@@ -286,7 +301,7 @@ button:hover{
     background-size: cover;
 }
 /* FOR MOBILE SCREEN */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .tel {
         display: none;
     }
