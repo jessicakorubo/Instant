@@ -2,27 +2,27 @@
 /* FONT FACES */
 @font-face {
     font-family: 'Ubuntu';
-    src: url(Fonts/Ubuntu/Ubuntu-Regular.ttf);
+    src: url(fonts/Ubuntu/Ubuntu-Regular.ttf);
 }
 @font-face {
     font-family: 'Bree_Serif';
-    src: url(Fonts/BreeSerif-Regular.ttf);
+    src: url(fonts/BreeSerif-Regular.ttf);
 }
 @font-face {
     font-family: 'Parisienne';
-    src: url(Fonts/Parisienne-Regular.ttf);
+    src: url(fonts/Parisienne-Regular.ttf);
 }
 @font-face {
     font-family: 'Sedgwick';
-    src: url(Fonts/SedgwickAveDisplay-Regular.ttf);
+    src: url(fonts/SedgwickAveDisplay-Regular.ttf);
 }
 @font-face {
     font-family: 'ShantellSans';
-    src: url(Fonts/ShantellSans-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf);
+    src: url(fonts/ShantellSans-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf);
 }
 @font-face {
     font-family: 'Noto_Serif';
-    src: url(Fonts/Noto_Serif/NotoSerif-Regular.ttf);
+    src: url(fonts/Noto_Serif/NotoSerif-Regular.ttf);
 }
 * {
     box-sizing: content-box;
