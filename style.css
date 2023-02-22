@@ -1,0 +1,333 @@
+
+/* FONT FACES */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(Fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: 'Bree_Serif';
+    src: url(Fonts/BreeSerif-Regular.ttf);
+}
+@font-face {
+    font-family: 'Parisienne';
+    src: url(Fonts/Parisienne-Regular.ttf);
+}
+@font-face {
+    font-family: 'Sedgwick';
+    src: url(Fonts/SedgwickAveDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: 'ShantellSans';
+    src: url(Fonts/ShantellSans-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf);
+}
+@font-face {
+    font-family: 'Noto_Serif';
+    src: url(Fonts/Noto_Serif/NotoSerif-Regular.ttf);
+}
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333;
+}
+.header {
+    font-family:'Bree_Serif';
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.header .logo {
+    font-family:'ShantellSans';
+    letter-spacing: 3px;
+}
+.menu ul li{
+    margin: 0 8px;
+    list-style-type: none;
+    margin-top: 0.7rem;
+    display: inline-block;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover {
+    border-top: 2px solid goldenrod;
+    border-radius: 50%;
+}
+.logo {
+    color: gold;
+}
+.tel {
+    color: whitesmoke;
+    margin-top: 0.5rem;
+}
+.tel a {
+    color: whitesmoke;
+}
+
+.hero {
+    height: 87vh;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    background-image:linear-gradient(rgba(23,14,12,0.5), rgba(78,23,12,0.7)), url(images/hero-background.jpg);
+}
+.heroContent{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.heroTitle {
+    color: white;
+    font-size: 2rem;
+    width: 25rem;
+    margin: auto;
+    padding: 2rem 0;
+    /* width: fit-content; */
+    text-align: center;
+    border-top:2px solid white;
+    border-bottom: 2px solid gold;
+}
+.heroTitle h2 {
+    letter-spacing: 10px;
+}
+.heroTitle p {
+    font-size: 20px;
+}
+.comments {
+    width: 17rem;
+    margin: auto;
+    margin-top: 2rem;
+    color: goldenrod;
+}
+.welcome {
+    font-family: 'Noto_Serif';
+    color: white;
+    height: 30rem;
+    background-color: #111111;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* This is the trick to vertically center content in a div. 
+    The height property has to be there.*/
+}
+.welcomeInfo * {
+    margin-top: 2rem;
+}
+hr#welcome {
+    width: 90px;
+    height: 2px;
+    background-color: goldenrod;
+    margin: auto;
+    text-align: center;
+}
+.welcomeInfo h2 {
+    letter-spacing: 8px;
+}
+.welcomeInfo p {
+    width: 25rem;
+}
+.more {
+    margin-top: 4rem;
+}
+.more a{
+    border: 1px solid white;
+    padding: 1rem 1.5rem;
+    text-decoration:none;
+    color: white;
+}
+.more a:hover {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    transition: 1s font-size;
+    /* transform:scaleX(0.1) */
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2;
+}
+.cruise {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/cruise-workshop.jpg);
+}
+.wedding {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/wedding-photography.jpg);
+}
+.catalog {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/catalogshoot.jpg);
+}
+.galleryPic {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25rem;
+}
+.galleryText {
+    /* display: flex; */
+    height: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 30%;
+}
+.contact {
+    font-family: 'Noto_Serif';
+    padding: 5rem 0;
+    background-color: #111111;
+    color: white;
+    text-align: center;
+}
+.contactTitle {
+    letter-spacing: 7px;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+.hamburger {
+    display: none;
+}
+
+.details {
+    border: 1px solid goldenrod;
+    background-color: transparent;
+}
+hr#hrContact {
+    text-align: center;
+    width: 4rem;
+    height: 2px;
+    background-color: goldenrod;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+a.endLink {
+    padding-bottom: 4rem;
+}
+
+button{
+    background-color: transparent;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 2.5rem;
+    transition: 1s font-family, 1s font-size;
+}
+button:hover{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.quickLinks a {
+    text-align: center;
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+.quickLinks a:hover{
+    color:goldenrod;
+}
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+}
+.contactDetails * {
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid goldenrod;
+    outline: none;
+    text-align: center;
+    padding: 1rem 3rem;
+    color: white;
+    background-color: transparent;
+    width: 14rem;
+}
+.contactDetails input:focus{
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+.contact input, textarea {
+    color: white;
+    font-size: 15px;
+}
+.contact ::placeholder {
+    color: white;
+    font-family: 'Noto_Serif';
+}
+.contactLinks a{
+    display: block;
+    width: 14rem;
+    margin: auto;
+    border-bottom: 1px solid goldenrod;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    color: white;
+    transition: 2s width;
+}
+.contact textarea{
+    height: 100px;
+}
+.footer {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/hero-background.jpg);
+    background-size: cover;
+}
+/* FOR MOBILE SCREEN */
+@media screen and (max-width: 750px) {
+    .tel {
+        display: none;
+    }
+    .hamburger {
+        display: inline-flex;
+    }
+    .hamburger img {
+        width: 35px;
+        height: 35px;
+    } 
+    .heroTitle {
+        font-size: 1.5rem;
+        width: 15rem;
+    }
+    .comments {
+        width: 12rem;
+        margin: auto;
+        margin-top: 2rem;
+        color: goldenrod;
+    }
+    .menu {
+        display: none;
+    }
+    
+    .welcomeInfo p {
+        width: 15rem;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1;
+        justify-content: center;
+    }
+    .galleryText {
+        padding-top: 50%;
+    }
+    .contactTitle {
+        font-size: 15px;
+    }
+    .contactLinks a{
+        width: 8rem;
+        
+    }
+}
