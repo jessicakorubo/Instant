@@ -177,24 +177,60 @@ hr#welcome {
     grid-template-columns: 50% 50%;
     grid-template-rows: 2;
 }
-.cruise {
-    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/cruise-workshop.jpg);
-}
-.wedding {
-    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/wedding-photography.jpg);
-}
-.catalog {
-    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/catalogshoot.jpg);
-}
-.slideshow {
-    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/couple.jpg);
-}
+
 .galleryPic {
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 25rem;
+    /* background-size: contain; */
 }
+.cruise{
+    background-image: url('Images/cruise-workshop.jpg');
+}
+
+.wedding {
+    background-image: url('Images/wedding-photography.jpg');
+}
+
+.catalog {
+    background-image: url('Images/catalogshoot.jpg');
+}
+
+.slideshow{
+    background-image: url('Images/couple.jpg');
+}
+
+.cruise:hover {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/cruise-workshop.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25rem;
+}
+.wedding:hover {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/wedding-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25rem;
+}
+.catalog:hover{
+    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/catalogshoot.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25rem;
+}
+.slideshow:hover {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Images/couple.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25rem;
+}
+
+
 .galleryText {
     /* display: flex; */
     height: 2rem;
