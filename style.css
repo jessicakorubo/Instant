@@ -32,11 +32,16 @@
 
 header {
     background-color: #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
 .header {
     font-family:'Bree_Serif';
     padding: 1.5rem 2rem;
     display: flex;
+    
     justify-content: space-between;
 }
 .header .logo {
@@ -48,6 +53,27 @@ header {
     list-style-type: none;
     margin-top: 0.7rem;
     display: inline-block;
+}
+.mobile-menu {
+    display: none;
+    margin-top: 2.5rem;
+}
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.mobile-menu ul li{
+    list-style: none;
+    
+}
+.mobile-menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+.mobile-menu ul li a:hover {
+    border-top: 2px solid goldenrod;
+    border-radius: 50%;
 }
 .menu a {
     color: white;
@@ -70,16 +96,14 @@ header {
 
 .hero {
     height: 87vh;
-    background-position: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-image:linear-gradient(rgba(23,14,12,0.5), rgba(78,23,12,0.7)), url(images/hero-background.jpg);
 }
 .heroContent{
-    width: 100%;
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
     text-align: center;
 }
 .heroTitle {
@@ -113,6 +137,7 @@ header {
     display: flex;
     text-align: center;
     justify-content: center;
+    padding: 2rem 0;
     align-items: center; /* This is the trick to vertically center content in a div. 
     The height property has to be there.*/
 }
@@ -193,6 +218,9 @@ hr#welcome {
 }
 .hamburger {
     display: none;
+    text-align: right;
+    cursor: pointer;
+    flex-direction: column;
 }
 
 .details {
@@ -309,9 +337,10 @@ input, select, textarea{
         display: none;
     }
     .hamburger {
-        display: inline-flex;
+        display: flex;
     }
     .hamburger img {
+        
         width: 35px;
         height: 35px;
     } 
@@ -327,6 +356,9 @@ input, select, textarea{
     }
     .menu {
         display: none;
+    }
+    .mobile-menu {
+        /* display: block; */
     }
     
     .welcomeInfo p {
