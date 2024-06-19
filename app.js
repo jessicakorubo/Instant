@@ -29,6 +29,8 @@ function isArray(myArray)  {
 
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.mobile-menu');
+const galleryPic = document.querySelectorAll('.galleryPic');
+const hiddenInfo = document.querySelector('.hiddenInfo');
 
 
 hamburger.addEventListener('click', ()=> {
@@ -43,4 +45,16 @@ hamburger.addEventListener('click', ()=> {
     }
 })
 
-// show
+galleryPic.forEach(element => {
+    const info = element.querySelector('.hiddenInfo');
+    element.addEventListener('mouseover', ()=> {
+        info.style.display ='block';
+    })
+    element.addEventListener('mouseleave', ()=> {
+        info.style.display = 'none';
+    })
+});
+
+
+// set info to hidden, on hover in app.js, set it to block
+

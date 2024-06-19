@@ -95,7 +95,7 @@ header {
 }
 
 .hero {
-    height: 87vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,7 +183,29 @@ hr#welcome {
     background-position: center;
     width: 100%;
     height: 25rem;
+    cursor: pointer;
+    font-family: 'Noto_Serif';
     /* background-size: contain; */
+}
+.hiddenInfo {
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+}
+.hiddenInfo .learn {
+    background: transparent;
+    border: 1px solid white;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 15px 0;
+}
+.learn a {
+    color: white;
+    text-decoration: none;
+}
+.learn a:hover {
+    color: goldenrod;
 }
 .cruise{
     background-image: url('Images/cruise-workshop.jpg');
@@ -238,8 +260,13 @@ hr#welcome {
     justify-content: center;
     align-items: center;
     color: white;
-    padding-top: 30%;
+    padding-top: 20%;
 }
+.galleryText h2 {
+    font-size: 40px;
+    font-family: 'Noto_Serif';
+}
+
 .contact {
     font-family: 'Noto_Serif';
     padding: 5rem 0;
@@ -407,7 +434,7 @@ input, select, textarea{
         justify-content: center;
     }
     .galleryText {
-        padding-top: 50%;
+        padding-top: 25%;
     }
     .contactTitle {
         font-size: 15px;
